@@ -64,7 +64,6 @@
     <remove-project name="device/google/trout" />
     <remove-project name="device/google/zuma" />
     <remove-project name="device/google/zuma-sepolicy" />
-    <remove-project name="device/google_car" />
 
     <!-- Development -->
     <remove-project name="platform/development" />
@@ -149,6 +148,7 @@
     <remove-project name="platform/packages/apps/Stk" />
     <remove-project name="platform/packages/apps/ThemePicker" />
     <remove-project name="platform/packages/apps/TvSettings" />
+    <remove-project name="platform/packages/apps/TvSystemUI" />
     <remove-project name="platform/packages/apps/WallpaperPicker2" />
     <remove-project name="platform/packages/inputmethods/LatinIME" />
     <remove-project name="platform/packages/modules/adb" />
