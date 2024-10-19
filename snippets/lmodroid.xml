@@ -25,6 +25,7 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
+    <project path="build/release" name="LMODroid/platform_build_release" remote="lmodroid" />
     <project path="build/soong" name="LMODroid/platform_build_soong" remote="lmodroid" >
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
@@ -74,6 +75,7 @@
 
     <!-- Hardware -->
     <project path="hardware/broadcom/libbt" name="LMODroid/platform_hardware_broadcom_libbt" groups="pdk" remote="lmodroid" />
+    <project path="hardware/google/camera" name="LMODroid/platform_hardware_google_camera" groups="pdk" remote="lmodroid" />
     <project path="hardware/google/gchips" name="LMODroid/platform_hardware_google_gchips" groups="pdk-lassen" remote="lmodroid" />
     <project path="hardware/google/graphics/common" name="LMODroid/platform_hardware_google_graphics_common" groups="pdk-lassen" remote="lmodroid" />
     <project path="hardware/interfaces" name="LMODroid/platform_hardware_interfaces" groups="pdk" remote="lmodroid" />
@@ -85,6 +87,9 @@
 
     <!-- Kernel -->
     <project path="kernel/configs" name="LMODroid/platform_kernel_configs" groups="vts,pdk" remote="lmodroid" />
+
+    <!-- Library -->
+    <project path="libcore" name="LMODroid/platform_libcore" groups="pdk" remote="lmodroid" />
 
     <!-- Manifest -->
     <project path="manifest" name="LMODroid/manifest" remote="lmodroid" />
@@ -98,6 +103,7 @@
     <project path="packages/apps/DesktopMode" name="LMODroid/platform_packages_apps_DesktopMode" remote="lmodroid" />
     <project path="packages/apps/Dialer" name="LMODroid/platform_packages_apps_Dialer" remote="lmodroid" />
     <project path="packages/apps/DocumentsUI" name="LMODroid/platform_packages_apps_DocumentsUI" remote="lmodroid" />
+    <project path="packages/apps/EmergencyInfo" name="LMODroid/platform_packages_apps_EmergencyInfo" remote="lmodroid" />
     <project path="packages/apps/Etar" name="LMODroid/platform_packages_apps_Etar" remote="lmodroid" />
     <project path="packages/apps/F-DroidPrivilegedExtension" name="LMODroid/platform_packages_apps_F-DroidPrivilegedExtension" remote="lmodroid" />
     <project path="packages/apps/FaceUnlock" name="LMODroid/platform_packages_apps_FaceUnlock" remote="lmodroid" />
@@ -134,6 +140,7 @@
     <project path="packages/modules/Bluetooth" name="LMODroid/platform_packages_modules_Bluetooth" remote="lmodroid" />
     <project path="packages/modules/Connectivity" name="LMODroid/platform_packages_modules_Connectivity" remote="lmodroid" />
     <project path="packages/modules/common" name="LMODroid/platform_packages_modules_common" groups="pdk-cw-fs,pdk-fs" remote="lmodroid" />
+    <project path="packages/modules/IntentResolver" name="LMODroid/platform_packages_modules_IntentResolver" remote="lmodroid" />
     <project path="packages/modules/Permission" name="LMODroid/platform_packages_modules_Permission" groups="pdk" remote="lmodroid" />
     <project path="packages/modules/Wifi" name="LMODroid/platform_packages_modules_Wifi" remote="lmodroid" />
     <project path="packages/overlays/LMODroid" name="LMODroid/platform_packages_overlays_LMODroid" remote="lmodroid" />
